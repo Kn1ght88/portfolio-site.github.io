@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <!--This is for the font for the #welcome-text and the my skills -->
+   <link href="https://fonts.googleapis.com/css?family=Quicksand|Share+Tech+Mono" rel="stylesheet">
+    <!--  -->
+   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+   <meta charset="UTF-8">
+   <!--<! <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>-->
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+      <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
+
+   <title>Yan Torres Portfolio</title>
+  </head>
+    <body>
+      <style>
+        body {
+          background-image: url("http://i.imgur.com/Qq46Yjv.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          margin:0;
+          width: 100%;
+            
+        }
+      
+      #welcome-text {
+        font-size: 2em;
+        font-weight: bold;
+        font-style: italic;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        padding-top: 1.5em;
+      }
+      
+      #body-text {
+          text-align: justify;
+          /*border: solid black 3px;*/
+          /* border-radius: 10px; */
+          z-index: 5;
+          color: white;
+          /*background-color: black;*/
+          position: relative;
+          height:500px;
+          margin: 3em auto;
+          width:calc(90% - 6em);
+          background-color:rgba(0, 0, 0, 0.7);
+          padding:3em;
+        }
+        
+      #sidebar {
+          padding-top: 1em;
+          padding-left: 1em;
+        
+      }
+      
+      #sidebarbutton {
+          /* background-color: #0347FC; /* Blue */
+          background:linear-gradient(to right, #8AAAFF, #000000);
+          border: solid black;
+          border-radius: 10px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 22px;
+          font-family: 'Audiowide', cursive;
+
+        }
+      #navigation-link {
+        /*background-color: #FCB803; /* Yellow */
+          background: linear-gradient(to left, #8AAAFF, #000000);
+          border: 2px solid black;
+          border-radius: 10px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: underline;
+          display: inline-block;
+          font-size: 12px;
+          font-family: 'Audiowide', cursive;
+
+      }  
+      
+      #footerstyle {
+          position:static;
+          background-image: url(http://i.imgur.com/yyeC3gJ.png);
+          width:100%;
+          padding-top:2px;
+          font-family: 'Quicksand', sans-serif;
+      }
+      
+      .your-class {
+        width: 90%;
+        background-color: rgba(0, 0, 0, .1);
+      }
+      
+      .slick-button {
+        color: white;
+        
+      }
+      
+      </style>
+    
+     <button id="sidebarbutton" onclick="sidebar_open()">	&#9776;</button>
+      
+      <div id="sidebar" style="display:none" >
+        <button onclick="sidebar_close()" id="sidebarbutton">Close &times;</button>
+        <a  id="navigation-link"  href="yan-torres.html" >Home</a>
+        <a  id="navigation-link" href="my-skills.html" >My Skills</a>
+        <a  id="navigation-link" href="contact-me.html" >Contact Me</a>
+      </div>
+      
+      <div id="welcome-text">Aspiring to be the best Developer I can be.</div>
+      
+      <h1 style="text-align: center; color: white; font-family: 'Share Tech Mono', monospace; ">My Skills</h1>
+      <div class="your-class">
+        <div><img style="width: 100%; height:654px;" src="http://i.imgur.com/yR8UbCr.png"></img></div>
+        <div><img style="width: 100%; height:654px;" src="http://i.imgur.com/j5k61fs.png"></img></div>
+        <div><img style="width: 100%; height:654px;" src="http://i.imgur.com/G6sey72.jpg"></img></div>
+      </div>
+      
+        
+    <footer id="footerstyle">
+		<h4>Follow my story</h4>
+		  <a href="https://twitter.com/yantorres" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/Kn1ght88" data-size="large" aria-label="Follow @Kn1ght88 on GitHub">Follow @Kn1ght88</a>   
+      
+      <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/yan-torres-182920121" data-format="click" data-related="false" data-text="Yan Torres"></script>  
+    </footer>
+     
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+<!-- These are for the buttons to work properly -->
+
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script> 
+  
+  
+  <script>
+        function sidebar_open() {
+          document.getElementById("sidebar").style.width = "100%";
+          document.getElementById("sidebar").style.display = "block";
+          document.getElementById("sidebarbutton").style.display = "none";
+          
+        }
+        function sidebar_close() {
+          document.getElementById("sidebar").style.display = "none";
+          document.getElementById("sidebarbutton").style.display = "block";
+        }
+      
+     //$('.single-item').slick();
+
+     
+       $(function() {
+          $('.your-class').slick({
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              dots: false,
+          });
+        }); 
+      
+      </script>
+  
+  
+  
+  </body>
+</html>

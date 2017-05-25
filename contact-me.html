@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <!--This is for the font for the #welcome-text and the contact me -->
+   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand" rel="stylesheet">
+    <!--  -->
+   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+   <!-- <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>-->
+   <title>Yan Torres Portfolio</title>
+  </head>
+    <body>
+      <style>
+        body {
+          background-image: url("http://i.imgur.com/dURNuDb.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          margin:0;
+          width: 100%;
+          height: 100%;
+            
+        }
+        
+      #welcome-text {
+        font-size: 2em;
+        font-weight: bold;
+        font-style: italic;
+        padding-top: 1.5em;
+        font-family: 'Quicksand', sans-serif;
+      }
+      
+      #body-text {
+          text-align: justify;
+          /*border: solid black 3px;
+          border:;-radius: 10px;*/
+          
+          margin: auto;
+          color: black;
+        /*  background: red; /* For browsers that do not support gradients 
+          background: -webkit-radial-gradient(circle, red, yellow, green); 
+          background: -o-radial-gradient(circle, red, yellow, green); 
+          background: -moz-radial-gradient(circle, red, yellow, green); 
+          background: radial-gradient(circle, red, blue, white); */
+        }
+        
+       #footerstyle {
+          position:static;
+          background-image: url(http://i.imgur.com/yyeC3gJ.png);
+          width:100%;
+          padding-top:2px;
+          font-family: 'Quicksand', sans-serif;
+      }
+      
+      #contact-form {
+        text-align: center;
+      }
+      
+      #contact-form input, textarea {
+          text-align: center;
+          font-size: 1.5em;
+          font-style: italic;
+          
+          
+      }
+      
+       #mailchimp {
+         width: 500px;
+         margin:auto;
+       }
+      
+      .sidenav {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #8EDDE4;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #09090A;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #BB8246;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav { 
+    height: 100%;
+}
+
+#main {
+    height: 100%;
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="yan-torres.html">Home</a>
+  <a href="my-skills.html">Skills</a>
+  <a href="contact-me.html">Contact</a>
+</div>
+ 
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<div id="welcome-text">Aspiring to be the best Developer I can be.</div>
+      
+  <div id="mailchimp"> 
+      <h1 style="text-align: center; font-family: 'Indie Flower', cursive;">Stay in Touch...</h1>
+       
+        <!--<div id="sidebar"> -->
+            <form action="https://formspree.io/yktorres88@gmail.com"
+            method="POST" id="contact-form"> <!-- #contact-form input { whatever } -->
+            <div>Name </br>
+            <input type="text" name="name" >
+            </div>
+            <div>Email </br>
+            <input type="email" name="_replyto">
+            </div>
+            <div>Message </br>
+            <textarea name="textarea"></textarea>
+            </div>
+            <div>
+            <button type="submit">Send</button>
+            </div>
+            </form>
+            
+            <a id="mail" href="mailto:yktorres88@gmail.com">Yktorres88@gmail.com</a>
+            <!-- Begin MailChimp Signup Form -->
+     
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+      	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+      	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="//linkedin.us15.list-manage.com/subscribe/post?u=b24f119c78d487d4a18aa5d54&amp;id=093b7345e3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+      	<h2>Subscribe to my mailing list</h2>
+      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+      	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+      </label>
+      	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+      <div class="mc-field-group">
+      	<label for="mce-FNAME">First Name </label>
+      	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+      </div>
+      <div class="mc-field-group">
+      	<label for="mce-LNAME">Last Name </label>
+      	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+      </div>
+      	<div id="mce-responses" class="clear">
+      		<div class="response" id="mce-error-response" style="display:none"></div>
+      		<div class="response" id="mce-success-response" style="display:none"></div>
+      	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b24f119c78d487d4a18aa5d54_093b7345e3" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  
+  <footer id="footerstyle">
+		<h4>Follow my story</h4>
+		  <a href="https://twitter.com/yantorres" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <!-- Place this tag where you want the button to render. -->
+      <a class="github-button" href="https://github.com/Kn1ght88" data-size="large" aria-label="Follow @Kn1ght88 on GitHub">Follow @Kn1ght88</a>   
+      
+      <script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/yan-torres-182920121" data-format="click" data-related="false" data-text="Yan Torres"></script>  
+    </footer>
+  
+  </div>
+      <!--End mc_embed_signup-->    
+      
+        
+    
+    
+
+
+
+<script>
+
+$(function() { // jQuery goes in here...
+    // Detect clicks on "main" and toggle the navbar...
+    $("#main").click(function() {
+        // If nav is open, close it.
+        // If nav is already closed, do nothing...
+    });
+});
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "#09090A";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "#DDC297";
+} /*---------------END -----------------NAV BAR----------------------------- */
+</script>
+      <!-- These are for the buttons to work properly -->
+<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+       
+  </body>
+</html>
